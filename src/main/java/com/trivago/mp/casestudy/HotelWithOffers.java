@@ -16,6 +16,11 @@ public class HotelWithOffers {
     public HotelWithOffers(Hotel hotel) {
         this.hotel = hotel;
     }
+    
+    public HotelWithOffers addOffers(List<Offer> offers) {
+    	this.offers = offers;
+    	return this;
+    }
 
     public Hotel getHotel() {
         return hotel;
